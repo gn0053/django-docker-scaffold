@@ -18,9 +18,9 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /src
 #setup venv
-RUN pip install --upgrade pip
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
+RUN pip install --upgrade pip
 
 # Create a non-privileged user that the app will run under.
 # See https://docs.docker.com/go/dockerfile-user-best-practices/

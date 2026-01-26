@@ -16,8 +16,8 @@ services:
     volumes:
       - ./src:/src
     env_file: ./.env
-    command: >
-      sh -c "python manage.py runserver 0.0.0.0:8000"
+    #command: >
+    #  sh -c "python manage.py runserver 0.0.0.0:8000"
     develop:
       watch:
        - action: rebuild
