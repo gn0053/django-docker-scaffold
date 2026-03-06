@@ -2,3 +2,6 @@ django
 django-rest-framework
 djangorestframework-simplejwt
 dotenv
+django-csp
+bleach
+markupsafe
